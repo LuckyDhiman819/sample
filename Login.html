@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Validator.js"></script>
+</head>
+
+<body bgcolor="grey">
+    <h1>
+        <marquee><u>
+                <p><b>Welcome to the Product App</p></b>
+            </u>
+
+        </marquee>
+    </h1>
+
+
+    <form action="success.html" onsubmit="return validate()">
+        <center>
+            <fieldset>
+                <div class="Card text-white bg-dark" style="max-width: 30rem;">
+                    <div class="card-body">
+                        <h2>Login Information </h2>
+                        <form class="form-inline" >
+                            User Name :<label for="text" class="mr-sm-2"></label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" name="username" id="username">
+                            Password :<label for="pwd" class="mr-sm-2"></label>
+                            <input type="password" class="form-control mb-2 mr-sm-2" name="password" id="password">
+
+                            <button type="submit" class="btn btn-danger mb-2" onclick="validate()">Submit</button>
+                        </form>
+
+                    </div>
+
+            </fieldset>
+        </center>
+    </form>
+
+    <button type="button" class="btn btn-dark "><a href="Home.html">Home</a></button>
+
+</body>
+
+</html>
